@@ -57,19 +57,13 @@ gulp.task('images', function() {
     .pipe(browserSync.reload({stream: true}));
 });
 
-// Watch JS and LESS files for automatic changes
-gulp.task('watch', function() {
-    gulp.watch('./js/*.js', ['scripts']);
-    gulp.watch(['/less/*.less'], ['styles']);
-});
-
 // Server watches folder for changes and auto-reloads
-gulp.task('reload', ['browser-sync'], function () {
+gulp.task('watch', ['browser-sync'], function () {
     gulp.watch("./less/*.less", ['styles']);
     gulp.watch('./js/*.js', ['scripts']);
     gulp.watch("*.html").on('change', browserSync.reload);
 });
 
 // Default gulp task
-gulp.task('default', ['styles', 'scripts', 'images', 'watch', 'reload']);
+gulp.task('default', ['styles', 'scripts', 'images', 'watch']);
 

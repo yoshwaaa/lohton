@@ -6,3 +6,10 @@ h1 {
   font-size: 5em;
   color: black;
 }
+img {
+  position: relative;
+  transition: transform .8s;
+}
+img:hover {
+  transform: translateX(250px);
+}
