@@ -501,3 +501,14 @@ html.fp-enabled,
   font-weight: 700;
   letter-spacing: .019em;
 }
+#fullpage .hero .vb .scrollDown {
+  position: absolute;
+  margin-top: 32rem;
+  width: 48px;
+  cursor: pointer;
+  left: 50%;
+  top: 90%;
+}
+#fullpage .hero .vb a svg:hover #scroll {
+  stroke: #000;
+}
