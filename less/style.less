@@ -1,13 +1,46 @@
-h1 {
-	font-size: 5em;
-	color: black;
+
+#mainNav {
+    display: none;
 }
 
-img {
-	position: relative;
-	transition: transform .8s;
+#sidebar {
+    width: 89px;
+    pointer-events: all;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 100;
+    background-color: #f4f4f4;
+    border-right: 1px solid rgba(0, 0, 0, .08);
 }
 
-img:hover {
-	transform: translateX(250px);
+#fullpage .hero {
+    width: 100%;
+    background-image: url('/img/hero-image.jpg');
+    color: rgb(255, 255, 255);
+    height: 777px;
+    transform: translate3d(0px, 0px, 0px);
+    background-color: rgb(49, 49, 49);
+    background-size: cover;
+    background-position: 50% 50%;
+
+    .vb {
+        h3 {
+            font-size: 16rem;
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: .019em;
+            margin-bottom: 10rem;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 42rem;
+            font-weight: 700;
+            letter-spacing: .019em;
+        }
+    }
 }
