@@ -44,16 +44,27 @@
         }
 
            .scrollDown {
-            position: absolute;
-            margin-top: 32rem;
-            width: 48px;
-            cursor: pointer;
-            left: 50%;
-            top: 90%;
+              width: 1rem;
+              height: 1rem;
+              display:block;
+              cursor: pointer;
+
+               a {
+                position: absolute;
+                color: #ffffff;
+                margin-top: 12rem;
+                left: 50%;
+                top: 90%;
+                font-size: 22rem;
+                text-decoration: none;
+
+                &:hover {
+                    color: #444444;
+                    cursor: pointer;
+                }
+
+            }
         }
 
-        a svg:hover #scroll {
-            stroke: #000;
-        }
     }
 }
