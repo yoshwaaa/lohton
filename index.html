@@ -3,30 +3,41 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Lohton — Creative Agency</title>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Playfair+Display:400,700" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="./dist/style.css">
-	<script src="https://use.fontawesome.com/a14b40c158.js"></script>
-	<script type="text/javascript" src="./dist/main.js"></script>
 </head>
 <body>
 
 <header id="header">
 	<div id="blackLayer"></div>
 	<div id="sidebar">
-		<div id="logoSS"></div>
-		<div id="burgerMenuIcon"></div>
-		<nav id="navigation">
-			<ul id="mainNav">
-			    <li data-menuanchor="firstPage" class="active"><a href="#firstPage">First section</a></li>
-			    <li data-menuanchor="secondPage"><a href="#secondPage">Second section</a></li>
-			    <li data-menuanchor="3rdPage"><a href="#3rdPage">Third section</a></li>
-			    <li data-menuanchor="4thpage"><a href="#4thpage">Fourth section</a></li>
-			</ul>
-		</nav>
-		<div id="label">
-			<span class="logo-word"></span>
-			<p>home</p>
+		<div id="sidebarStaticContent">
+			<div id="logoTop"><img id="logoTopImg" src="img/logo/ss_black.png">
+				<div id="logoFull"><img src="img/logo/lohtonMissingLogo.png"></div>
+			</div>
+			<div id="logoSS"></div>
+			<p id="homePageSidebarText">Home</p>
+			<div id="burgerMenuIcon"></div>
+			<nav id="sidebarNav">
+				<ul>
+					<li id="navItemOne">Home</li>
+					<li id="navItemTwo">Work</li>
+					<li id="navItemThree">Services</li>
+					<li id="navItemFour">About</li>
+				</ul>
+			</nav>
+			<!-- <nav id="navigation">
+				<ul id="mainNav">
+				    <li data-menuanchor="firstPage" class="active"><a href="#firstPage">First section</a></li>
+				    <li data-menuanchor="secondPage"><a href="#secondPage">Second section</a></li>
+				    <li data-menuanchor="3rdPage"><a href="#3rdPage">Third section</a></li>
+				    <li data-menuanchor="4thpage"><a href="#4thpage">Fourth section</a></li>
+				</ul>
+			</nav> -->
+			<div id="label">
+				<span class="logo-word"></span>
+				<p>home</p>
+			</div>
 		</div>
 	</div>
 </header>
@@ -37,7 +48,7 @@
 <div id="fullpage">
     <div class="section hero full">
 
-    <div class="vb">
+    <div class="vb pushedContent">
     	<h3>Hello We made this for you</h3>
 		<h1>Lohton designs &amp; develops<br> digital experiences that put<br>
 		people first.</h1>
@@ -58,8 +69,9 @@
     <div class="section">Section 3</div>
     <div class="section">Some section</div>
 </div>
-
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://use.fontawesome.com/a14b40c158.js"></script>
+<script type="text/javascript" src="./dist/main.js"></script>
 </body>
 </html>
 

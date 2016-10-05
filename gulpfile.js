@@ -37,8 +37,8 @@ gulp.task('styles', function () {
 // Concatenate all JS files | Initialize linting system | Place JS files in 'dist' folder
 gulp.task('scripts', function() {
   return gulp.src('./js/*.js')
-    .pipe(jshint())
-    .pipe(jshint.reporter('default'))
+//    .pipe(jshint())
+//    .pipe(jshint.reporter('default'))
     .pipe(concat('main.js'))
     .pipe(gulp.dest('./dist/'))
     //.pipe(rename({ suffix: '.min' }))  -- Will be added when code is in production

@@ -36,7 +36,7 @@
             position: absolute;
             margin: auto;
             left: 30%;
-            top: 50%;
+            top: 30%;
             opacity: 1;
         }
 
@@ -116,4 +116,61 @@
         }
 
     }
+}
+
+#sidebar {
+    overflow: hidden;
+    z-index: 3;
+    #sidebarStaticContent {
+        position: fixed;
+        z-index: 5;
+    }
+    #sidebarNav {
+        font-size: 24px;
+        line-height: 1.5em;
+        position: relative;
+        top: 180px;
+        li {
+            position: relative;
+            left: -140px;
+            font-size: 40px;
+            line-height: 1.4em;
+        }
+    }
+}
+.pushedContent {
+    position: relative;
+}
+
+#logoTop {
+    position: relative;
+    left: 30px;
+    top: 20px;
+    #logoFull {
+        position: absolute;
+        left: -25px;
+        top: 0;
+        opacity: 0;
+    }
+}
+
+#logoFull {
+    opacity: 1;
+}
+
+.fp-tableCell {
+    overflow: hidden;
+}
+
+#logoTopImg {
+    position: relative;
+    z-index: 5;
+}
+
+p#homePageSidebarText {
+    position: absolute;
+    transform: rotate(270deg);
+    font-size: 30px;
+    right: 40px;
+    top: 300px;
 }
