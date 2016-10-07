@@ -578,7 +578,7 @@ html.fp-enabled,
   font-size: 24px;
   line-height: 1.5em;
   position: relative;
-  top: 180px;
+  top: 218px;
 }
 #sidebar #sidebarNav li {
   position: relative;
@@ -590,7 +590,7 @@ html.fp-enabled,
   position: relative;
 }
 #logoTop {
-  position: relative;
+  position: absolute;
   left: 30px;
   top: 20px;
 }
@@ -616,4 +616,15 @@ p#homePageSidebarText {
   font-size: 30px;
   right: 40px;
   top: 300px;
+}
+div#sidebarStaticContent {
+  top: 6%;
+}
+div#bottomMenuButton {
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+}
+div#bottomMenuButton svg {
+  transform: scale(1.2);
 }
