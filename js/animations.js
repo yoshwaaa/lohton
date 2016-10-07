@@ -9,9 +9,9 @@ $('#sidebar').click(function(){
 		$('#navItemTwo').velocity({left: '-140px'});
 		$('#navItemThree').velocity({left: '-140px'});
 		$('#navItemFour').velocity({left: '-140px'});
-		$('#homePageSidebarText').velocity({rotateZ: '-90deg', top: '300px', right: '40px'});
+		$('#homePageSidebarText').velocity({rotateZ: '-90deg', scale: '1', top: '300px', right: '40px'});
 		$('#topLine').velocity({rotateZ: '0deg', translateY: '6px'}, {duration: 200}).velocity({translateY: '0px'}, {duration: 200});
-		$('#topLine2').velocity({rotateZ: '0deg', translateY: '6px'}, {duration: 200}).velocity({translateY: '0px'}, {duration: 200});
+		$('#topLine2').velocity({rotateZ: '0deg', translateY: '6px'}, {duration: 200}).velocity({translateY: '0px', opacity: '0'}, {duration: 200});
 		$('#bottomLine').velocity({opacity: '1'}, {duration: 1, delay: 200}).velocity({translateY: '0px'}, {duration: 200});
 		$('#middleLine').velocity({opacity: '1'}, {delay: 200, duration: 10});
 	} else {
@@ -24,9 +24,9 @@ $('#sidebar').click(function(){
 		$('#navItemTwo').velocity({left: '30px'}, {delay: 200});
 		$('#navItemThree').velocity({left: '30px'}, {delay: 300});
 		$('#navItemFour').velocity({left: '30px'}, {delay: 400});
-		$('#homePageSidebarText').velocity({rotateZ: '0deg', top: '223px', right: '19.5px', scale: '1.3'});
+		$('#homePageSidebarText').velocity({rotateZ: '-90deg'}, {duration: .1}).velocity({rotateZ: '0deg', scale: '1.3', top: '223px', right: '19.5px'});
 		$('#topLine').velocity({translateY: '6px'}, {duration: 200}).velocity({rotateZ: '45deg', translateY: '-2px', translateX: '-1px'}, {duration: 200});
-		$('#topLine2').velocity({translateY: '6px'}, {duration: 200}).velocity({rotateZ: '-45deg', translateY: '14px', translateX: '-2px'}, {duration: 200});
+		$('#topLine2').velocity({translateY: '6px', opacity: '1'}, {duration: 200}).velocity({rotateZ: '-45deg', translateY: '14px', translateX: '-2px'}, {duration: 200});
 		$('#bottomLine').velocity({translateY: '-6px'}, {duration: 200}).velocity({opacity: '0'}, {duration: 1});
 		$('#middleLine').velocity({opacity: '0'}, {delay: 200, duration: 1});
 	}
